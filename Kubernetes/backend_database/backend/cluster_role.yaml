@@ -1,8 +1,0 @@
-kind: ClusterRole
-apiVersion: rbac.authorization.k8s.io/v1
-metadata:
-  name: pods-list
-rules:
-- apiGroups: [""]
-  resources: ["pods", "services", "deployments", "ingress"]
-  verbs: ["list", "create"]
