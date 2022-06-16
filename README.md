@@ -1,5 +1,5 @@
 # Healthcare-App
-App to help doctors to quickly analyse medical images and researchers to deploy ML mode
+App to help doctors to quickly analyse medical images and researchers to deploy ML models
 
 You need to install:
 
