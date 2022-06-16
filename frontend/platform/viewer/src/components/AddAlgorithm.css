@@ -1,0 +1,126 @@
+.content {
+  max-width: 500px;
+  margin: auto;
+  max-height: 500px;
+}
+
+form.formAlgorithm{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  min-width: 200px;
+  min-height: 200px;
+  padding: 20px 40px 40px 40px;
+  box-shadow: 0px 8px 30px rgb(0, 0, 0);
+  background-color: #d3d3d3;
+}
+
+form.formAlgorithm > h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.1em;
+  margin-top: 0.25em;
+  margin-bottom: 0.9em;
+  color: #000000;
+  letter-spacing: 1.2px;
+}
+
+label {
+  color: rgb(0, 0, 0);
+  padding: 6px 6px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+label .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: #000000;
+  color: #fff;
+  text-align: justify;
+  border-radius: 5px;
+  padding: 6px 6px;
+  position: absolute;
+  display: inline-block;
+  margin-left: 8px;
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+label:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+input.inputAlgorithm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 7px 7px;
+  margin-top: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 7px 7px;
+  margin-top: 5px;
+}
+
+.invalid {
+  border: 1px solid #db2222;
+  box-shadow: none;
+}
+input[type='checkbox'].invalid {
+  box-shadow: 0px 0px 0px 1px #db222b;
+}
+
+select.selectAlgorithm {
+  padding: 3px 3px;
+}
+
+select.selectAlgorithm {
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+}
+
+input[type='checkbox'] {
+  margin-right: 0.4em;
+  margin-top: 5px;
+  margin-bottom: 0.2em;
+  width: 4%;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #646c74;
+  color: #fefefe;
+}
+
+button:hover {
+  transition: all 0.2s ease-in-out;
+  background: #000000;
+  color: #fff;
+}
+
+.btn-group {
+  margin-top: 5px;
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.required {
+  color: #db2269;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
+
+.k-textbox-container,
+.k-floating-label-container {
+  width: 100%;
+}

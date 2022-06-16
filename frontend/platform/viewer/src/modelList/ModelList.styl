@@ -1,0 +1,170 @@
+
+$study-list-padding = 8%;
+$study-list-toolbar-height = 75px;
+$body-cell-height = 40px;
+$body-cell-top-bottom-padding = 16px;
+
+$tablePaddingMediumScreen = 5px
+$tablePaddingBigScreen = 3%
+$tablePaddingLargeScreen = 5%
+
+
+placeholder-color(c)
+  &::-webkit-input-placeholder
+    color: c
+  &:-moz-placeholder
+    color: c
+  &::-moz-placeholder
+    color: c
+  &:-ms-input-placeholder
+    color: c
+
+
+.model-list-header
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff
+  height: $study-list-toolbar-height
+  margin-bottom: 2px
+  padding: 0 $study-list-padding
+  line-height: $study-list-toolbar-height
+
+  .header
+    font-size: 22px
+    font-weight: 300
+    color: #0a0a0a
+    line-height: $study-list-toolbar-height
+
+
+  .model-count
+    color: #0a0a0a;
+    font-size: 40px
+    font-weight: 100
+    line-height: $study-list-toolbar-height
+
+
+.model-list-container
+  width: 100%
+  padding: 0 $study-list-padding
+  position: absolute
+  z-index: 2
+
+table.modeltable
+  width: 100%;
+  margin-bottom: 20px;
+
+  table-layout: fixed;
+  color: #ffffff
+  font-weight: 300
+
+  > tbody tr
+    padding: 5px
+    background-color: var(--ui-gray-darker)
+
+  > tbody td
+    padding: $body-cell-top-bottom-padding 8px;
+    height: $body-cell-height
+    word-wrap: break-word;
+
+
+  /* Striped Variant */
+  &.table--striped > tbody tr:nth-child(even)
+    background-color: var(--ui-gray-darker)
+
+  /* Hover Variant */
+  &.table--hoverable > tbody tr
+    &:hover, &:active, &.active
+      background-color: #232b31
+      cursor pointer
+    &.no-hover
+      &:hover, &:active, &.active
+        background-color: var(--ui-gray-darker)
+
+  .empty-value
+    color: var(--ui-gray-light)
+
+.model-list-container > table.table > tr
+  height: 20px
+
+.model-list-container > table.table > thead
+  ::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+  ::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+  ::-webkit-datetime-edit-day-field:not([aria-valuenow])
+    color: transparent
+
+.model-list-container > table.table > thead > tr > th
+  padding: 0;
+  width: 100%;
+  text-align: left;
+
+
+.model-list-container > table.table > thead > tr > th.CreatedAt
+  min-width: 230px
+
+.model-list-container
+  .filters
+    label
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      width: 100%;
+      min-width: 95px;
+      margin: 0 auto;
+      color: #000000;
+      font-weight: 400;
+      padding: 20px 8px;
+      user-select: none;
+      font-size: 15px;
+
+      &:hover
+        color: #008B8B;
+    i
+      margin: 0 5px;
+
+  input
+    height: 40px
+    margin: 0 5px 20px 5px
+    padding: 0 20px
+    cursor: pointer
+
+    background-color: var(--ui-gray-darker)
+    color: #232b31
+    font-size: 10pt
+    font-weight: normal
+
+    width: calc(100% - 10px);
+    transition(all 0.15s ease)
+    placeholder-color(var(--input-placeholder-color))
+
+
+
+  .loading-text
+    color: #ffffff
+    text-align: center;
+    font-size: 30px
+
+  .notFound
+    color: #ffffff
+    font-size: 30px
+    font-weight: 200
+    text-align: center
+
+@media only screen and (max-width: 768px)
+  .study-list-header
+    padding: 0 16px;
+
+  .model-list-container
+    padding: 0;
+
+  .model-list-container > table.table > thead > tr > th
+    padding: 0 13px;
+
+  .model-list-container > table.table > tbody > tr > td
+    padding: 8px;
+
+  .model-list-container .filters label
+    padding: 8px;
+
+@media only screen and (max-width: 500px)
+  .hide-xs
+    display: none;

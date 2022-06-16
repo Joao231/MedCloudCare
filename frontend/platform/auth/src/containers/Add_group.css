@@ -1,0 +1,76 @@
+.content {
+  max-width: 700px;
+  margin: auto;
+}
+
+form.addGroup {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  min-width: 200px;
+  min-height: 200px;
+  padding: 20px 40px 40px 40px;
+}
+
+label {
+  color: rgb(0, 0, 0);
+  padding: 6px 6px;
+  position: relative;
+  display: inline-block;
+}
+
+input.addGroup_input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 7px 7px;
+  margin-top: 5px;
+}
+
+.invalid {
+  color: #db2222;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
+
+input[type='checkbox'].invalid {
+  box-shadow: 0px 0px 0px 1px #db222b;
+}
+
+
+button {
+  cursor: pointer;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(54, 156, 199, 0.9);
+  color: #fefefe;
+}
+
+button.btn.page-link  {
+  cursor: pointer;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(54, 156, 199, 0.9);
+  color: #fefefe;
+}
+
+button:hover {
+  transition: all 0.2s ease-in-out;
+  background: #000000;
+  color: #fff;
+}
+
+
+.required {
+  color: #db2269;
+  font-size: 1.0em;
+  margin-top: 0.5em;
+}
+
+
+.k-textbox-container,
+.k-floating-label-container {
+  width: 100%;
+}

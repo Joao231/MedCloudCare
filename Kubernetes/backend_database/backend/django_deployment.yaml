@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django
+  labels:
+    app: django
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: django
+  template:
+    metadata:
+      labels:
+        app: django
+    spec:
+      containers:
+        - name: django
+          image: backend:1
+          imagePullPolicy: Never
+          command: ["/bin/sh","-c"]
+          args: [python3 manage.py makemigrations; python3 manage.py migrate && gunicorn -b 0.0.0.0:8000 -w 3 -k gevent medical_app.wsgi]
+          ports:
+            - containerPort: 8000
+          envFrom:
+            - configMapRef:
+                name: postgres-config
+          env:
+            - name: POSTGRES_PORT
+              value: "5432"
+            - name: POSTGRES_HOST
+              value: postgres
+          volumeMounts: 
+          - mountPath: /var/run/docker.sock
+            name: docker-sock 
+
+          volumeMounts: 
+          - mountPath: /usr/src/app/media
+            name: media-files
+      volumes: 
+      - name: docker-sock 
+        hostPath: 
+            path: /var/run/docker.sock
+            
+      volumes: 
+      - name: media-files
+        hostPath: 
+            path: /usr/src/app/media

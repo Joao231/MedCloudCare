@@ -1,0 +1,86 @@
+.ModelContent
+
+  .header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding: 10px 20px 0 20px
+    margin: 0 -20px
+
+  .btn
+    background-color: #FF4500;
+    color: #FFFAFA;
+    margin-bottom: 5px;
+    border-color: #FFFAFA;
+
+  .btn:hover
+    transition: all 0.2s ease-in-out;
+    background: var(--text-secondary-color);
+    color: #fff;
+
+  .table
+    margin-left: 30%;
+    margin-bottom: 30px;
+    width: 120%
+    thead:first-child
+      tr:first-child
+        th, td
+          display: table-header-group
+
+    thead, tbody, tfoot
+      tr
+        td.title
+          font-size: 14px
+          line-height: 25px
+          text-align: center
+
+        td.titleText
+          font-size: 14px
+          line-height: 35px
+          text-align: center
+
+        input
+          font-weight: 400
+          margin-left: 10px;
+          cursor: pointer
+          transition: background-color .3s ease,border-color .3s ease
+          background-color: var(--ui-gray)
+          color: var(--text-primary-color)
+          border-color: var(--ui-border-coolor)
+          border: 0
+          border-radius: 2px
+          font-size: 14px
+          height: 30px
+          width: 100%
+          line-height: 16px
+          padding: 8px 9px 6px
+          text-align: center
+
+        textarea
+          margin-left: 10px;
+          cursor: auto;
+          transition: background-color .3s ease,border-color .3s ease
+          background-color: var(--ui-gray)
+          color: var(--text-primary-color)
+          border-color: var(--ui-border-coolor)
+          border: 0
+          border-radius: 2px
+          font-size: 13px
+          height: auto
+          width: 100%
+          line-height: 16px
+          padding: 8px 9px 6px
+          text-align: left
+
+        .counter
+          margin-left: 10px;
+
+
+        .invalid
+          border: 1px solid #db2222;
+          box-shadow: none;
+
+        .required
+          color: #db2269;
+          font-size: 0.8em;
+          margin-top: 0.5em;

@@ -1,0 +1,16 @@
+Django==2.0
+psycopg2-binary==2.8.6
+djoser
+djangorestframework==3.11.0
+social_django
+rest_framework_simplejwt
+rest_framework_simplejwt.token_blacklist
+rest_social_auth
+corsheaders
+guardian
+docker
+kubernetes
+gevent
+gunicorn
+dicomweb-client
+monailabel

@@ -1,0 +1,11 @@
+npm run build
+
+
+volumes:
+        - name: task-pv-storage
+          persistentVolumeClaim:
+            claimName: task-pv-claim
+
+volumeMounts:
+            - mountPath: "/etc/orthanc"
+              name: task-pv-storage

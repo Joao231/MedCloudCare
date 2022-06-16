@@ -1,0 +1,75 @@
+.segmentationList
+  .subtitle
+    font-size: 14px
+    text-decoration: underline
+    font-weight 500
+
+  .segSection
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid;
+
+  .segTable
+    border-collapse: collapse;
+    border: 1px dotted;
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    overflow-x: auto;
+
+  .segButton
+    color: #333;
+    background-color: #fff;
+    padding: 4px 12px;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.15s ease;
+
+
+  .segButton:hover,
+  .segButton:active,
+  .segButton.active {
+    background-color: var(--active-color);
+    border-color: var(--ui-border-color-active);
+    color: #fff;
+  }
+
+  .segButton:disabled,
+  .segButton.disabled {
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.664);
+    border: 1px solid #ccc;
+    border-color: rgba(255, 255, 255, 0.541);
+    cursor: none;
+  }
+
+  .segTable tr:nth-child(even) {
+    background-color: #333333
+  }
+
+  .segTable tr th
+    background-color: #333333;
+    text-align: center;
+    border: 1px dotted;
+    padding: 2px;
+
+  .segTable tr td
+    padding: 2px;
+    text-align: center;
+
+  .segColor
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block
+
+  .segEdit
+    display: flex

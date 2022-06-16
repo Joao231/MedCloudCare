@@ -1,0 +1,13 @@
+docker pull jodogne/orthanc-plugins
+
+
+docker run -p 4242:4242 -p 8042:8042 --rm jodogne/orthanc-plugins
+
+
+docker run --rm --entrypoint=cat jodogne/orthanc /etc/orthanc/orthanc.json > /tmp/orthanc.json
+docker run -p 4242:4242 -p 8042:8042 --rm -v /tmp/orthanc.json:/etc/orthanc/orthanc.json:ro jodogne/orthanc
+
+
+
+mkdir /tmp/orthanc-db
+docker run -p 4242:4242 -p 8042:8042 --rm -v /tmp/orthanc-db/:/var/lib/orthanc/db/ jodogne/orthanc-plugins

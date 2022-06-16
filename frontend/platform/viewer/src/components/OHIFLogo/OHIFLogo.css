@@ -1,0 +1,30 @@
+.header-brand {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  color: #151c22;
+}
+
+.header-brand:hover,
+.header-brand:active,
+.header-band:visited {
+  color: #000000;
+}
+
+.header-logo-image {
+  height: 50px;
+  width: 50px;
+}
+
+.header-logo-text {
+  width: 245px;
+  height: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: x-large;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-logo-text {
+    display: none;
+  }
+}

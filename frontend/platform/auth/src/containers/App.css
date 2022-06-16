@@ -1,0 +1,38 @@
+.social-container {
+  padding: 25px 50px;
+}
+
+.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+.social:hover {
+  transform: translateY(-2px);
+}
+
+a.google {
+  color: #eb3223;
+  cursor: pointer;
+}
+
+a.facebook {
+  color: #4968ad;
+  cursor: pointer;
+}
+
+a.linkedin {
+  color: #49a1eb;
+  cursor: pointer;
+}
+
+a.github {
+  color: black;
+  cursor: pointer;
+}
+
+a.spotify {
+  color: green;
+  cursor: pointer;
+}

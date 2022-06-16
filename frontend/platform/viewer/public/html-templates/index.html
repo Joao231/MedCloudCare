@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="<%= PUBLIC_URL %>assets/android-chrome-144x144.png"/>
+    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Viewer">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="@viewer">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="<%= PUBLIC_URL %>assets/android-chrome-144x144.png">
+    <link rel="shortcut icon" href="<%= PUBLIC_URL %>assets/android-chrome-144x144.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="<%= PUBLIC_URL %>assets/android-chrome-144x144.png">
+    <meta name="msapplication-config" content="<%= PUBLIC_URL %>assets/browserconfig.xml">
+    <link rel="manifest" href="<%= PUBLIC_URL %>manifest.json">
+    <link rel="yandex-tableau-widget" href="<%= PUBLIC_URL %>assets/yandex-browser-manifest.json">
+
+  <!-- Built with: https://polyfill.io/v3/url-builder/ -->
+  <!-- Targets IE11 -->
+  <script
+    src="https://polyfill.io/v3/polyfill.min.js?flags=gated&features=default%2CObject.values%2CArray.prototype.flat%2CObject.entries%2CSymbol%2CArray.prototype.includes%2CString.prototype.repeat%2CArray.prototype.find"></script>
+  <script type="text/javascript">
+    window.PUBLIC_URL = '<%= PUBLIC_URL %>';
+  </script>
+  <script type="text/javascript" src="<%= PUBLIC_URL %>app-config.js"></script>
+  <script type="module" src="<%= PUBLIC_URL %>init-service-worker.js"></script>
+  <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+  <title>Viewer</title>
+
+  <!-- WEB FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet" />
+
+
+</head>
+
+<body>
+  <noscript> You need to enable JavaScript to run this app. </noscript>
+
+  <div id="root"></div>
+</body>
+
+</html>
