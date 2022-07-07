@@ -1,6 +1,8 @@
 # Healthcare-App
 App to help doctors to quickly analyse medical images and researchers to deploy ML models
 
+![App Architecture](C:/Users/Utilizador/Uminho/kubernetes_cluster.drawio.png "App Architecture")
+
 You need to install:
 
 **Docker** - https://docs.docker.com/get-docker/
