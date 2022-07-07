@@ -5,7 +5,11 @@ App to help doctors to quickly analyse medical images and researchers to deploy 
 
 You need to install:
 
-**Docker** - https://docs.docker.com/get-docker/
+<span style="color:green;font-weight:700;font-size:20px">
+   **Docker** - https://docs.docker.com/get-docker/
+</span>
+
+
 
 **Minikube** - https://minikube.sigs.k8s.io/docs/start/
 
