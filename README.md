@@ -15,6 +15,8 @@ You need to install:
 
 **Terraform** - https://www.terraform.io/downloads
 
+## Commands
+
 After that, you need to change value of **keys** and **IDs** for the **social accounts** and the value for **email** and **password** to sending emails. You also need to put a value for **master_key** and **master_iv** variables on **"backend/Django/container_api/scripts/cifra.py"** file and on **"backend/Django/container_api/scripts/decifra.py"**.
 
 Then, you have to open **7** command line windows:
@@ -36,5 +38,7 @@ In the seventh window, run the command **"minikube tunnel"**.
 Then, you have to ssh into the backend pod to run **"python3 manage.py shell"** and apply these commands **"from django.contrib.auth.models import Group, Permission", "new_group, created = Group.objects.get_or_create(name='health_professionals')"** and **new_group, created = Group.objects.get_or_create(name='investigators')**. Then, leave the shell and execute the file **"admin_key_iv.py"** to add a key and a iv to the admin to encrypt his information in the database. Then exit the pod shell.
 
 Now, you can close all windows **except the last one**.
+
+## Use the App
 
 Finally, you can open your favourite browser and write **localhost** to use the app.
