@@ -5,11 +5,6 @@ App to help doctors to quickly analyse medical images and researchers to deploy 
 
 You need to install:
 
-<span style="color:green;font-weight:700;font-size:20px">
-   ola
-</span>
-
-
  **Docker** - https://docs.docker.com/get-docker/
  
 **Minikube** - https://minikube.sigs.k8s.io/docs/start/
