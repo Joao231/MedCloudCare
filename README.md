@@ -3,6 +3,7 @@ App to help doctors to quickly analyse medical images and researchers to deploy 
 
 ![App Architecture](./kubernetes_cluster.drawio.png "App Architecture")
 
+##Installations
 You need to install:
 
  **Docker** - https://docs.docker.com/get-docker/
