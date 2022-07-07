@@ -11,7 +11,7 @@ You need to install:
 
 **Terraform** - https://www.terraform.io/downloads
 
-After that, you need to change value of keys and IDs for the social accounts and the value for email and password to sending emails. You also need to put a value for master_key and master_iv variables on "backend/Django/container_api/scripts/cifra.py" file and on "backend/Django/container_api/scripts/decifra.py"
+After that, you need to change value of **keys** and **IDs** for the **social accounts** and the value for **email** and **password** to sending emails. You also need to put a value for **master_key** and **master_iv** variables on **"backend/Django/container_api/scripts/cifra.py"** file and on **"backend/Django/container_api/scripts/decifra.py"**.
 
 Then, you have to open **7** command line windows:
 
