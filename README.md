@@ -36,9 +36,9 @@ Then, you have to open **7** command line windows:
 - In the seventh window, run the command **"minikube tunnel"**.
 
 Then, you have to ssh into the backend pod to run **"python3 manage.py shell"** and apply these commands:
-- **from django.contrib.auth.models import Group, Permission**
-- **new_group, created = Group.objects.get_or_create(name='health_professionals')**
-- **new_group, created = Group.objects.get_or_create(name='investigators')**
+1. **from django.contrib.auth.models import Group, Permission**
+2. **new_group, created = Group.objects.get_or_create(name='health_professionals')**
+3. **new_group, created = Group.objects.get_or_create(name='investigators')**
 
 Then, leave the shell and execute the file **"admin_key_iv.py"** to add a key and a iv to the admin to encrypt his information in the database. Then exit the pod shell.
 
