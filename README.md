@@ -42,7 +42,7 @@ Then, you have to ssh into the backend pod to run **"python3 manage.py shell"** 
 
 Then, leave the shell and execute the file **"admin_key_iv.py"** to add a key and a iv to the admin to encrypt his information in the database. Then exit the pod shell.
 
-Now, you can close all windows **except the last one**.
+Now, you can close all windows **except the seventh**.
 
 ## Use the App
 
