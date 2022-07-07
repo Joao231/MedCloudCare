@@ -7,13 +7,13 @@ App to help doctors to quickly analyse medical images and researchers to deploy 
 
 You need to install:
 
- **Docker** - https://docs.docker.com/get-docker/
+1. **Docker** - https://docs.docker.com/get-docker/
  
-**Minikube** - https://minikube.sigs.k8s.io/docs/start/
+2. **Minikube** - https://minikube.sigs.k8s.io/docs/start/
 
-**Minikube ingress** - https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
+3. **Minikube ingress** - https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
 
-**Terraform** - https://www.terraform.io/downloads
+4. **Terraform** - https://www.terraform.io/downloads
 
 ## Commands
 
